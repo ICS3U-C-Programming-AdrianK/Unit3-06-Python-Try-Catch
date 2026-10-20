@@ -20,13 +20,13 @@ def main():
         user_number = int(user_input)
 
         # check if the user guess is correct
-        if user_input == number:
+        if user_number == number:
             print("you guessed correctly !!")
+        else:
+                print("you guessed wrong!!")
+                print("The correct answer was : {}".format(number))
     except ValueError:
         print("{} is not an integer".format(user_input))
-    else:
-        print("you guessed wrong!!")
-        print("The correct answer was : {}".format(number))
         # Add the finally block
     finally:
         print("Thank you for playing ")
