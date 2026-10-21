@@ -23,8 +23,8 @@ def main():
         if user_guess_int == number:
             print("you guessed correctly !!")
         else:
-                print("you guessed wrong!!")
-                print("The correct answer was : {}".format(number))
+            print("you guessed wrong!!")
+            print("The correct answer was : {}".format(number))
     except ValueError:
         print("{} is not an integer".format(user_guess_str))
         # Add the finally block
