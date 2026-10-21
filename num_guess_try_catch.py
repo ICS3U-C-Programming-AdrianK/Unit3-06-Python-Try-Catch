@@ -11,22 +11,22 @@ def main():
     number = int(random.randint(0, 9))
 
     # get the user guess between 0 and 9
-    user_input = input("Enter your guess number : ")
+    user_guess_str = input("Enter your guess number between (0 and 9) : ")
     print("")
 
     # get the user guess and check if it is correct
     try:
         # cast the user input into an integer
-        user_number = int(user_input)
+        user_guess_int = int(user_guess_str)
 
         # check if the user guess is correct
-        if user_number == number:
+        if user_guess_int == number:
             print("you guessed correctly !!")
         else:
-            print("you guessed wrong!!")
-            print("The correct answer was : {}".format(number))
+                print("you guessed wrong!!")
+                print("The correct answer was : {}".format(number))
     except ValueError:
-        print("{} is not an integer".format(user_input))
+        print("{} is not an integer".format(user_guess_str))
         # Add the finally block
     finally:
         print("Thank you for playing ")
